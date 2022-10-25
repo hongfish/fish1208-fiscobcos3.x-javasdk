@@ -23,10 +23,10 @@ peers=["192.168.229.182:20200"]    # The peer list to connect
 
 [account]
 keyStoreDir = "account"         # The directory to load/store the account file, default is "account"
-# accountFilePath = ""          # The account file path (default load from the path specified by the keyStoreDir)
+accountFilePath = "conf/0x217f21672cbf9532db9bcf10f2e457a5a2b00165.pem"          # The account file path (default load from the path specified by the keyStoreDir)
 accountFileFormat = "pem"       # The storage format of account file (Default is "pem", "p12" as an option)
 
-# accountAddress = ""           # The transactions sending account address
+accountAddress = "0x217f21672cbf9532db9bcf10f2e457a5a2b00165"           # The transactions sending account address
                                 # Default is a randomly generated account
                                 # The randomly generated account is stored in the path specified by the keyStoreDir
 
