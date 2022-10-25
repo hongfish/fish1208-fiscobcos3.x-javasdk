@@ -1,0 +1,8 @@
+channel-service:
+  group-id: group0 # sdk实际连接的群组
+
+config-toml:
+  config-path: classpath:config.toml
+
+contract-address:
+  helloworld: "0x6849f21d1e455e9f0712b1e99fa4fcd23758e8f1"
