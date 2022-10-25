@@ -3,6 +3,7 @@ package com.fish1208.bcos.config;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.io.FileUtils;
 import org.fisco.bcos.sdk.v3.BcosSDK;
+import org.fisco.bcos.sdk.v3.client.Client;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -21,6 +22,11 @@ public class BcosSDKConfig {
     @Bean
     public BcosSDK getBcosSDK() throws Exception{
         return BcosSDK.build(getFilePath(configPath));
+    }
+
+    @Bean
+    public Client getClient(BcosSDK sdk) {
+        return sdk.getClient();
     }
 
     /**

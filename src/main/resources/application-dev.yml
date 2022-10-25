@@ -1,6 +1,3 @@
-channel-service:
-  group-id: group0 # sdk实际连接的群组
-
 config-toml:
   config-path: classpath:config.toml
 

@@ -18,8 +18,8 @@ useSMCrypto = "false"                       # RPC SM crypto type
 
 [network]
 messageTimeout = "10000"
-defaultGroup="group0"                            # Console default group to connect
-peers=["192.168.229.182:20200"]    # The peer list to connect
+defaultGroup="group0"                            # sdk实际连接的群组
+peers=["192.168.229.183:20200"]    # The peer list to connect
 
 [account]
 keyStoreDir = "account"         # The directory to load/store the account file, default is "account"
